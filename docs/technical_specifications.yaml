@@ -1,0 +1,15 @@
+# 使用技術スタック
+technical_specifications:
+  frontend:
+    - React
+    - Next.js
+    - Tailwind CSS
+  backend:
+    - Node.js
+  authentication:
+    - OAuth
+  api:
+    - Google Calendar API
+    - Microsoft Calendar API
+  others:
+    - Webhook

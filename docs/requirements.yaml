@@ -1,0 +1,62 @@
+# プロジェクト概要
+project_overview: |
+  このプロジェクトは、Google Calendar APIやMicrosoft CalendarなどのカレンダーAPIを使用して、空いている時間帯を取得したり、イベントを作成したりするアプリケーションです。
+
+# 機能要件
+functional_requirements:
+  calendar_integration:
+    - 空いている時間帯を取得
+    - イベントを作成
+    - URLを共有して、イベントの時間を選択
+    - イベント作成時にのみカレンダーデータを同期
+  
+  event_scheduling:
+    constraints:
+      - イベントの時間制限設定
+      - イベント前後の時間設定
+      - イベント予約可能開始時間の設定
+      - 空き時間として提示する期間の設定
+      - 開始時間・終了時間の設定
+    complex_conditions:
+      - 複数人のカレンダー参加
+      - 論理演算による条件設定（例：Aさんかつ（Bさん or Cさん）で条件が合う時間帯を提示）
+
+  workspace:
+    - ワークスペースごとのユーザー管理
+    - ワークスペースごとのイベント管理
+    - ワークスペースのユーザー数制限あり
+    - ワークスペース間の共有機能なし
+
+  user_management:
+    - OAuthによるログイン
+    - OAuth取得情報の保存
+    - 役割分担なし
+
+  notifications:
+    - Webhook
+    - Slack連携
+    - メール通知
+
+# 非機能要件
+non_functional_requirements:
+  security:
+    - OAuth認証による安全なアクセス管理
+    - APIキーの適切な管理
+  
+  performance:
+    - イベント作成時のリアルタイムカレンダー同期
+    - 効率的なスケジュール検索
+
+  scalability:
+    - ワークスペースごとの独立したデータ管理
+    - 複数カレンダーサービスとの連携
+
+  maintainability:
+    - モジュール化された設計
+    - 拡張性を考慮したAPI設計
+
+# 制約事項
+constraints:
+  - 繰り返しイベントの作成機能なし
+  - バッチ処理による定期同期なし
+  - ワークスペース間でのデータ共有不可
