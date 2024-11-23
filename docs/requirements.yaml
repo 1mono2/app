@@ -1,6 +1,6 @@
 # プロジェクト概要
 project_overview: |
-  このプロジェクトは、Google Calendar APIやMicrosoft CalendarなどのカレンダーAPIを使用して、空いている時間帯を取得したり、イベントを作成したりするアプリケーションです。
+  このプロジェクトは、Google Calendar APIやMicrosoft Outlook CalendarなどのカレンダーAPIを使用して、空いている時間帯を取得したり、イベントを作成したりするアプリケーションです。
 
 # 機能要件
 functional_requirements:
